@@ -1,1 +1,14 @@
-@import "tailwindcss";
+.years {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.experience{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(79, 78, 78);
+}
+
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

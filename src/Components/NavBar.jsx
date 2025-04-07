@@ -31,27 +31,32 @@ function NavBar() {
   return (
     <>
       {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-transparent w-100 text-white"
+        <Navbar key={expand} expand={expand} collapseOnSelect
+        className="bg-transparent w-100 text-white"
         style={{position:"absolute",top:"0",left:"0",zIndex:"10" }} >   
          <Container className='d-flex  justify-content-between mx-auto'>
           <Navbar.Brand href="#home" className='text-white fs-4 d-flex justify-content-center align-items-center fw-bold gap-1'>  
           <FaHome className='fs-3'/>Estate</Navbar.Brand>
             <Navbar.Toggle 
+            
             aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas className="bg-dark"
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header
+                closeVariant='white'
+               closeButton>
               </Offcanvas.Header>
               <Offcanvas.Body>
-              <Nav className=" text-center fs-4">
-                <Nav.Link href="#home" 
+              <Nav className="d-flex justify-content-center align-items-center fs-5 mx-auto">
+                <Nav.Link href="#Header" 
                 className='text-white'>Home</Nav.Link>
-                <Nav.Link href="#link" className='text-white'>About</Nav.Link>
-                <Nav.Link href="#home" className='text-white'>Projects</Nav.Link>
-                <Nav.Link href="#link" className='text-white'>Testimonials</Nav.Link>
+                <Nav.Link href="#About" className='text-white'>About</Nav.Link>
+                <Nav.Link href="#Projects" className='text-white'>Projects</Nav.Link>
+                <Nav.Link href="#Testimonials" className='text-white'>Testimonials</Nav.Link>
+                <Nav.Link href="#Contact" className='text-white'>Contact</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

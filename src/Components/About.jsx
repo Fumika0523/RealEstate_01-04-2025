@@ -9,7 +9,7 @@ import { Button} from 'react-bootstrap'
 
 const AboutUs = () => {
   return (
-    <Container fluid className='border border-danger border-4'>
+    <Container fluid className='mb-5 '>
          
         {/* Title */}
         <div className='px-4 px-sm-0  '>
@@ -39,9 +39,9 @@ const AboutUs = () => {
                     <div className='years'>25+</div>
                     <div className='experience'>Ongoing Projects</div>
                 </div>
-                <div className=' mt-4 col-10 mx-auto'>
+                <div className=' mt-4 col-10 mx-auto text-lg-start text-center'>
                     <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <Button variant="primary"> Learn More</Button>
+                    <Button variant="primary" className='px-5'> Learn More</Button>
                  </div>
             </Col>  
         </Row>
